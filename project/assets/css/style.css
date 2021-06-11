@@ -1206,7 +1206,7 @@ section {
 }
 
 .pricing .get-started-btn {
-  background: #1e4356;
+  background: red;
   display: inline-block;
   padding: 6px 30px;
   border-radius: 20px;
