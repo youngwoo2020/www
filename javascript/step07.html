@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+   
+</head>
+<body>
+    
+</body>
+<script>
+    const mem = {
+    num : 1,
+    'a-ddr' : '한국'
+    };
+    console.log(mem.num);
+    console.log(mem["a-ddr"]); //배열일 때는 [index], object일때는 [key]
+
+    delete mem["a-ddr"];  //특정키 삭제
+    console.log(mem["a-ddr"]); //undified
+
+
+    const club = {
+    "squadName": "Super hero squad",
+    "homeTown": "Metro City",
+    "formed": 2016,
+    "secretBase": "Super towe", 
+    "active": true,
+    "members": [
+        {
+            "name": "Molecule Man",
+            "age": 29,
+            "secretIdentity": "Dan Jukes",
+            "powers": [
+                "Radiation resistanc",        "Turningtiny",  "Radiationblast" ] },{"name": "Madame Uppercu", "age": 39,
+                "secretIdentity":"Jane Wilson",
+                "powers": [
+                    "Million tonne punch",
+                    "Damage resistance",
+                    "Superhuman reflexes"
+                ]
+            },
+            {
+                "name": "EternalFlame",      "age": 1000000,
+                "secretIdentity": "Unknown",
+                "powers": [
+                    "Immortality",
+                    "Heat Immunity",
+                    "Inferno",
+                    "Teleportation",
+                    "Interdimensional travel"
+                ]
+            }
+        ]
+    } 
+    let sname = club.squadName;
+    let homeTown = club.homeTown;
+    let formed = club.formed;
+    let secretBase = club.secretBase;
+    let active = club.active;
+    console.log(sname);
+    console.log(homeTown);
+    console.log(formed);
+    console.log(secretBase);
+    console.log(active);
+    
+
+    const membersArray = club.members;
+    let html = "<table>";
+    html += "<tr>";
+    html += "<th>이름</th>";
+    html += "<th>나이</th>";
+    html += "<th>개인정보</th>";
+    html += "<th>파워즈</th>";
+    html += "</tr>";
+    for(const memberObj of membersArray){
+        html += "<tr>";
+
+        html += "<td>";
+        let name = memberObj.name;
+        html += name+"</td>";
+
+        html += "<td>";
+        let age = memberObj.age;
+        html += age+"</td>";
+
+        html += "<td>";
+        let secretIdentity = memberObj.secretIdentity;
+        html += secretIdentity+"</td>";
+          
+        html += "<td>";
+        const powersArray = memberObj.powers;
+        console.log(name,age,secretIdentity);
+        for(let power of powersArray){
+            console.log(power)
+            html += power +" ";
+        }
+        html += "</td>";
+        html += "</tr>";
+    }
+    html += "</table>";
+    document.body.innerHTML = html;
+
+    let str ='{"name":"sung","age":"12"}';
+     const member = JSON.parse(str);
+     console.log(member.name);
+     console.log(member.age);
+     
+    alert(member); 
+
+    let str2 = JSON.stringify(member);
+    alert(str2);
+    
+
+
+</script>
+</html>

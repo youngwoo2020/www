@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype</title>
+    <script>
+        //number type
+        let num1 = 10; //int
+        let num2 = 20.1; // float
+        console.log(typeof num1);
+        console.log(typeof num2);
+        //String type
+        let myname = '권영우';
+        let yourname = '손정의';
+        console.log(typeof myname);
+        console.log(typeof yourname);
+
+        //boolean type
+        let isRun = true;
+        let iisGreater = 10>5;
+        console.log(typeof isRun);
+
+        //undifined type ->선언만 하고 쓰지 않을 때 undifined
+        let a;
+        let b = undefined;
+        let c = a+1;   //NaN   a+"1" => undefined1 출력
+
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(c);
+
+        //null -> object
+        let d = null;  //0취급
+        let e = d+1;  //d+"1" => null1 출력
+        console.log(e);
+        console.log(typeof d);
+        console.log(a==b);    //true    == : 값비교
+        console.log(a===d);   //false   === : 값+자료형 비교
+
+        //object type(java의 map구조)
+        const obj = {num : 1, name : '권영우', isMan : true};   //{key : value}
+        console.log(typeof obj);                                                        
+        //array type (object type)
+        const names = ['권영우', '손정의', '잡스'];             //모든 타입 삽입 가능
+        console.log(typeof names);
+
+        //function type
+        //함수식
+        const f = function(){
+
+        }
+        f();
+        console.log(typeof f);
+
+        //선언적 함수
+        function sum(){ 
+    
+        }
+        sum();
+        console.log(typeof sum);
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imamge&Video</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--alt속성은  
+        1. 이미지가 없을 경우 대체 텍스트를 제공한다 
+        2.접근성 관점에서 이미지를 스크린 리더에게 알려줌으로써 이미지를 설명해준다.
+        width, heigth는 img의 속성이긴 하나 style 정의해서 사용하는 것이 바람직하다. 
+    -->
+    <h3>사진</h3>
+    <img src="darth-vader.jpg" alt="피존 사진입니다"/>
+
+    <h3>비디오</h3>
+        <video width="300" poster="darth-vader.jpg" controls autoplay>
+            <source src="test.mp4" type="Video/mp4"/>
+        </video>
+   
+</body>
+</html> 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+    #one{
+        display: none;
+    }
+    #two{
+        display: inline;   /*인라인 요소에서 width, height는 입력 불가, 마진은 오른쪽과 왼쪽만 가능, 패딩은...*/
+        background-color: yellow;
+        width: 1000px;
+        height: 500px; 
+        margin: 500px 10px;
+        
+        border: 1px solid black;
+    }
+    #three{
+        display: inline-block;
+        width: 600px;
+        height: 100px; 
+        margin:10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+  
+
+
+    </style>
+</head>
+<body>
+    <h1>display 속성 테스트</h1>
+    <button id="showBtn">눌러보세요</button>
+    <p id="one">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <hr>
+    <h1>inline vs inline-block</h1>
+    <div>Lorem Ipsum is simply dummy</div>
+    <div id="two">Lorem Ipsum is simply dummy</div>
+    <div id="three">Lorem Ipsum is simply dummy</div>
+    <div>Lorem Ipsum is simply dummy</div>
+    <script>
+        let isOn = true;
+        document.getElementById("showBtn").addEventListener("click",function(){
+        if(isOn){
+            document.getElementById("one").style.display="block"
+            isOn = false;
+        }else{
+            document.getElementById("one").style.display="none";
+            isOn=true;
+        }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

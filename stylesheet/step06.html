@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        button{
+            border: 1px solid blue;
+        }
+        #btn2{
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        #btn3{
+            margin: 10px;
+        }
+        #btn4{
+            margin: 10px 10px 10px 10px;
+        }
+        #btn5{
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        #btn6{
+            margin: 10px 20px ;
+        }
+        #btn7{
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+        #btn8{
+            margin: 10px 20px 30px;
+        }
+       /* div{
+            border: 1px solid black;
+            background-color: yellow;
+            text-align: center;
+        }*/
+        .login{
+            /*전제 width에서 객체의 width를 빼고 나누기 2, 아래위 마진값을0, 양옆 마진값을 오토로 하면 중앙정렬이 됨*/
+            width: 170px; 
+            margin: 0 auto; 
+            border: 1px solid black;
+            text-align: center;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <button>버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button id="btn3">버튼3</button>
+    <button id="btn4">버튼4</button>
+    <button id="btn5">버튼5</button>
+    <button id="btn6">버튼6</button>
+    <button id="btn7">버튼7</button>
+    <button id="btn8">버튼8</button>
+    <button id="btn9">버튼9</button>
+    <div>안녕하세요</div>
+    <div class="login">
+        <h3>폼 요소 작성하기</h3>
+        <form action="save.html" method="post"> <!--get방식 :url에 표시됨. href로 넘어가는 것은 다 get방식 -->
+           <div>
+    
+            <label for="email">이메일</label><!--이메일을 클릭하면 폼테이블 안으로 들어감 labew for % id-->
+            <input type="email" name="email" id="email"/><!--name: save.html로 넘어갈 때 key값을 정해주는 것(넘길 때 url에 표시되는 것)-->
+           </div>
+           <div>
+            <label for="pwd">비밀번호</label>
+            <input type="password" name="pwd" id="pwd"/>
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+            <button type="reset">취소</button>
+        </div>   
+        </form>
+    </div>
+   
+
+</body>
+</html>

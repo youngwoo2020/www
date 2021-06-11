@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h3>표(table) 형식으로 출력하기</h3>
+    <table>
+        <style>
+            table{
+                border : 1px dotted black;
+                border-collapse: collapse;
+            }
+            td{
+                border : 1px dotted black;
+            }
+            th{
+                border : 1px dotted black;
+            }
+        </style>
+        <caption> 친구목록입니다. </caption>
+        <colgroup> <!--셀에 대한 크기-->
+            <col width = "100px"/>
+            <col width = "300px"/>
+            <col width = "200px"/>
+        </colgroup>
+        <thead>
+        
+            <th>번호</th> <!--굵은 글씨, 가운데 정렬-->
+            <th>이름</th>
+            <th>주소</th>
+    
+        </thead>
+        <tbody>
+        <tr>    <!--한 행을 설정-->
+            <td >1</td> <!--한 셀을 설정-->
+            <td colspan="2">손정의(일본)</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>스티브잡스</td>
+            <td rowspan="2">미국</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>부테린</td>
+            
+     </tr>
+      </tbody>
+        
+    </table>
+</body>
+</html>

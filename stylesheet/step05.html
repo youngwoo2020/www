@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: skyblue;
+            }
+            .box1{
+                border-width: 10px;
+                border-style: solid;
+                border-color: blue;
+            }
+            .box2{
+                border: 10px solid blue;
+            }
+            .box3{
+                border-top-width: 10px;
+                border-top-style: solid;
+                border-top-color: blue;
+
+                border-right-width: 10px;
+                border-right-style: dotted;
+                border-right-color: purple;
+
+                border-bottom-width: 10px;
+                border-bottom-style: dashed;
+                border-bottom-color: darkblue;
+
+                border-left-width: 10px;
+                border-left-style: double;
+                border-left-color: blueviolet;
+            }
+
+            .box4{
+                border-width: 10px 10px 10px 10px;
+                border-style: soid dotted dashed double;
+                border-color: blue purple darkblue blueviolet;
+            }
+         </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    
+</body>
+</html>

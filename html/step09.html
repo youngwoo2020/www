@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>폼 요소 작성하기</h3>
+    <form action="save.html" method="post"> <!--get방식 :url에 표시됨. href로 넘어가는 것은 다 get방식 -->
+       <div>
+
+        <label for="email">이메일</label><!--이메일을 클릭하면 폼테이블 안으로 들어감 labew for % id-->
+        <input type="email" name="email" id="email"/><!--name: save.html로 넘어갈 때 key값을 정해주는 것(넘길 때 url에 표시되는 것)-->
+       </div>
+       <div>
+        <label for="pwd">비밀번호</label>
+        <input type="password" name="pwd" id="pwd"/>
+    </div>
+    <div>
+        <button type="submit">로그인</button>
+        <button type="reset">취소</button>
+    </div>
+
+    
+    </form>
+</body>
+</html>
